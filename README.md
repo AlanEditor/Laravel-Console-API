@@ -3,6 +3,14 @@
 
 Este sistema em console realiza uma consulta a API Binance, salva no banco de dados as últimas cem requisições em relação a criptomoeda desejada, realiza um calculo médio entre os valores e retorna um resultado dizendo se o último valor requerido é 0.5% menor em relação à média adquirida.
 
+## Instalação
+
+Abra a pasta dentro do terminal e digite: 
+-  *composer install* 
+-  *php -r "copy('.env.example', '.env');"*
+-  *php artisan key:generate*
+
+
 ## Como Funciona?
 
 Siga os passoa abaixo:
