@@ -9,6 +9,8 @@ Abra a pasta dentro do terminal e digite:
 -  *composer install* 
 -  *php -r "copy('.env.example', '.env');"*
 -  *php artisan key:generate*
+
+Configure o arquivo .env com os dados do seu banco de dados e execute:
 -  *php artisan migrate*
 
 
