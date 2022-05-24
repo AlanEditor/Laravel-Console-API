@@ -39,46 +39,6 @@ class checkAvgBigPrice extends Command
         }
         else
         {
-            /*
-            //Consulta a API para pegar o valor atual
-            $url = 'https://api.binance.com/api/v3/ticker/price?symbol='.$moeda;
-            $api = new saveBidPriceOnDataBase();
-            $valor = $api->consultar($url);
-
-            //Request ao banco de dados
-            $preco = [];
-            $conteudos = Moeda::where('symbol', $moeda)->get();
-    
-            //Adiciona os valores ao array
-            foreach($conteudos as $conteudo)
-            {
-               $conteudo->price;
-               array_push($preco, $conteudo->price);
-            }
-    
-            //Calcula o preço médio e formata
-            $precoMedio = array_sum($preco) / 100;
-            $precoMedio = number_format($precoMedio, 2, '.', '');
-
-            //Calcula a porcentagem e formata
-            $porcentagem = $precoMedio * 0.05;
-            $porcentagem = number_format($porcentagem, 2, '.', '');
-
-            //Valor atual
-            $atual = $valor['price'];
-            
-            if($atual < ($precoMedio - $porcentagem))
-            {
-               return $this->alert('O PREÇO ESTÁ MENOR QUE A MÉDIA - APROVEITE E COMPRE');
-            }
-            else
-            {
-                return $this->info('o valor da média entre os ultimos 100 é maior que o valor atual');
-            }
-            */
-            
-
-            //CASO O ÚLTIMO SEJA REFERENTE AO ULTIMO VALOR E NAO AO ATUAL
 
             //Request ao banco de dados
             $preco = [];
