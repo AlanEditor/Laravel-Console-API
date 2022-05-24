@@ -9,6 +9,7 @@ Abra a pasta dentro do terminal e digite:
 -  *composer install* 
 -  *php -r "copy('.env.example', '.env');"*
 -  *php artisan key:generate*
+-  *php artisan migrate*
 
 
 ## Como Funciona?
